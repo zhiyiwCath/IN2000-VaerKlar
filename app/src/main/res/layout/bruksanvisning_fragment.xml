@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.fragments.settings.BruksanvisningFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:id="@+id/toolbar_bruksanvisning"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#858585"
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:weightSum="9">
+
+
+            <ImageButton
+                android:id="@+id/home_button_userManual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_back"
+                android:contentDescription="@string/home_button_userManual_desc" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hvordan_bruke_applikasjonen"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="9"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/hjemmeside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="@string/hjemmeside_og_klesanbefaling"
+            android:textStyle="bold"
+            android:layout_below="@+id/toolbar_bruksanvisning"/>
+
+
+        <TextView
+            android:id="@+id/bruksAnvisningTekst1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Bruksanvisning1"
+            android:layout_below="@id/hjemmeside"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="5dp"
+            />
+        <ImageView
+            android:id="@+id/bruksBilde1"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/bruksanvisning"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/bruksAnvisningTekst1"
+            android:contentDescription="@string/bruksBilde1_desc" />
+
+
+        <TextView
+            android:id="@+id/værSøk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="@string/vaer_soek"
+            android:textStyle="bold"
+            android:layout_below="@+id/bruksBilde1" />
+
+
+        <TextView
+            android:id="@+id/bruksAnvisningTekst2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Bruksanvisning2"
+            android:layout_below="@id/værSøk"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/instillinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="@string/instillinger"
+            android:textStyle="bold"
+            android:layout_below="@+id/bruksAnvisningTekst2"/>
+        <TextView
+            android:id="@+id/bruksAnvisningTekst3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Bruksanvisning3"
+            android:layout_below="@id/instillinger"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="5dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

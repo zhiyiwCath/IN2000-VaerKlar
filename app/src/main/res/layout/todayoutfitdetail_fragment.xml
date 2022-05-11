@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.fragments.home.TodayOutfitDetailFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar_todayoutfit"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#858585"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:weightSum="9">
+
+
+        <ImageButton
+            android:id="@+id/button_to_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_back"
+            android:contentDescription="@string/knapp_til_hovedsiden" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dagens_anbefaling"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_weight="9"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/today_outfit_detail_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_todayoutfit"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

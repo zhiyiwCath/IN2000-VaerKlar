@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/location_list_item"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="15dp"
+            android:layout_below="@+id/toolbar_chooseLoc"
+            android:background="#eeeeee">
+
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gps"
+            android:contentDescription="@string/gps_desc" />
+
+        <TextView
+            android:id="@+id/loc_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:text="@string/placeholder"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/button_loc_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back"
+            android:rotationY="-180"
+            android:contentDescription="@string/button_loc_to_home_desc" />
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

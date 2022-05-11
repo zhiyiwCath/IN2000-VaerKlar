@@ -1,0 +1,168 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+HomeViewModel --> "1" MainRepository
+MainActivity --> "1" HomeFragment
+ApiInterface <|-- ApiHandler
+AppCompatActivity <|-- MainActivity
+ViewModel <|-- HomeViewModel
+MainRepository *--> "1" Locationforecast
+MainRepository *--> "1" Nowcast
+WeatherNext24Hrs --> "1..*" HourForcastHolder
+HomeFragment --> "1" HomeViewModel
+MainRepository *--> "1"  ApiHandler
+HomeViewModel *--> "1"  WeatherNext24Hrs
+HomeViewModel *--> "1..*"  HourForcastHolder
+MainRepository *--> "1"  Database
+Database *--> "1" Wardrobe
+Wardrobe *--> "1..*" Antrekk
+Wardrobe *--> "1..*" Plagg
+Antrekk *--> "1..*" Plagg
+
+
+
+class MainActivity  {
++ override onCreate(savedInstanceState: Bundle?)
++ AppCompatActivity.makeCurrentFragment(fragment: Fragment)
+}
+
+class AppCompatActivity{
+}
+
+class ViewModel{
+}
+
+'data class
+class WeatherNext24Hrs{
++ val weatherList: MutableList<HourForcastHolder>
+}
+
+'data class
+class HourForcastHolder {
++val time: String
++val temp: Double
++val symbolCode: String
+}
+
+'data class men error i plantUML og vet ikke hvordan jeg far internklasse
+class Locationforecast {
++ val geometry: Geometry,
++ val properties: Properties,
++ val type: String
+}
+
+'data class men error i plantUML og vet ikke hvordan jeg far internklasse
+class Nowcast {
++ val geometry: Geometry,
++ val properties: Properties,
++ val type: String
+}
+
+class MainRepository{
+- var apiInterface: ApiInterface
+- var staticFilesDatabase: Database
+- var roomDatabase : PlacesDao
+- var nowcastCache : MutableMap<PlaceRoomEntity, Pair<Calendar, Nowcast>>
+- var locationforecastCache : MutableMap<PlaceRoomEntity, Pair<Calendar, Nowcast>>
+- var sunriseCache : MutableMap<PlaceRoomEntity, Pair<Calendar, Sunrise>>
+- var cacheTimeOut : Int
+- var currentPlace: PlaceRoomEntity
++ suspend getAllPlaces() :  List<PlaceRoomEntity>
++ initializePlacesDatabase(context: Context)
++ suspend insert(place: PlaceRoomEntity)
++ suspend clearPLaceDatabase()
+- upToDate(timeStamp : Calendar) : Boolean
++ suspend getNowcast(): Nowcast
++ getLocationforecast(): Locationforecast
++ suspend getSunrise(): Sunrise
++ initializeFileDatabase(context: Context, filename : String)
++ getOutfits() : List<Antrekk>
++ getClothes() : List<Plagg>
++ testMode()
++ getGeocoder(lat : Double, lon : Double): GeocoderAddress
+}
+
+class HomeViewModel {
++ val allPlaces: LiveData<List<PlaceRoomEntity>>
+- val defaultDispatcherIO: CoroutineDispatcher
++ val nowcast : LiveData<Nowcast>
++ val sunrise : LiveData<Sunrise>
++ val sanntidsvarsel : LiveData<WeatherDataHolder>
++ val dagsvarsel : LiveData<DailyForecastHolder>
++ val timesvarsel : LiveData<WeatherNext24Hrs>
++ val langtidsvarsel : LiveData<Array<DailyWeatherHolder>>
++ val bakgrunn : LiveData<String>
++ val addressOnMapClick : MutableLiveData<String>
++ val addressOnDeviceLocation : MutableLiveData<String>
++ getGeocoderAddressess( latitude: Double, longitude: Double, deviceLocorMapClick : Boolean)
+- makeBackgroundLiveData(sun : LiveData<Sunrise>, weather : LiveData<Nowcast>) : LiveData<String>
++ regnEffTemp(temp: Double, wind: Double): Double
++ degreesToCode(dir: Double) : String
++ initializeFileDatabase(context: Context, filename: String)
++ initializePlacesDatabase(context: Context)
++ insertPlaceRoomEntity(place: PlaceRoomEntity)
++ getCurrentLocation() : String
++ setCurrentLocation(newLocation: PlaceRoomEntity)
++ velgAntrekk(): Antrekk?
++ getClothingFromOutfit(outfit:Antrekk): List<Plagg>
++ setBackground(symbolCode: String) : String
+}
+interface  ApiInterface{
+}
+class ApiHandler {
+-val endpointNowcast: String
+-val endpointLocationforecast: String
+-val endpointSunrise: String
+-val endpointGeocoderAPI: String
+-val header: String
++ override suspend getLocationforecast(lat: Float, lon: Float): Locationforecast
++ override suspend getSunrise(lat: Float, lon: Float, date: String, offset: String): Sunrise
++ override suspend getAddress(lat : Double, lon : Double) : GeocoderAddress
+}
+
+class HomeFragment{
+- lateinit var homeViewModel: HomeViewModel
++ override onCreateView(inflater: LayoutInflater,container: ViewGroup?, savedInstanceState: Bundle?) : View?
++ override onActivityCreated(savedInstanceState: Bundle?)
+- symbolToText(symbol: String):String
+- getMenuHeight(a: AppCompatActivity):Int
+}
+
+class Database {
++Database(context : Context, fileName: String)
+-lateinit var newWardrobe: Wardrobe
+- getJsonFile(context: Context, fileName: String): String?
+-createWardrobe(context: Context, fileName: String)
++getOutfits():List<Antrekk>
++getClothes():List<Plagg>
+}
+'data
+class Antrekk{
++Antrekk(id: String, ikon: String,tempMin: Double, vind: Boolean,maxNedbor: Int )
++val id: String
++val ikon: String
++val plagg: List<String>
++val tempMin: Double
++val vind: Boolean
++val maxNedbor: Int
+}
+
+'data
+class Plagg{
++Plagg(id: String, navn: String, ikon: String)
++val id: String
++val navn: String
++val ikon: String
+}
+
+'data
+class Wardrobe{
++Wardrobe(outfits: List<Antrekk>, clothes: List<Plagg>)
++val outfits: List<Antrekk>
++val clothes: List<Plagg>
+}
+
+
+
+@enduml

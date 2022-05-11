@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">VærKlar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="avbryt">Avbryt</string>
+    <string name="title_activity_maps">Current Place Details</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place">Get place</string>
+    <string name="pick_place">Choose a place</string>
+
+
+    <string name="Om_oss_1">
+        VærKlar er en applikasjon som viser klesanbefalinger basert på dagens vær.
+        Ideen bak applikasjonen var å lage noe nyttig for de som ikke er så godt kjent med det norske klimaet,
+        eller de som sliter med å kle seg etter været.
+    </string>
+
+    <string name="Om_oss_2">
+        Applikasjonen er produsert som en del av et emne IN2000, av seks studenter ved Institutt for Informatikk på Universitetet i Oslo.
+        Logikken bak anbefalingene av antrekk og plagg er modellert av oss. Det kan derfor oppstå avvik i anbefalingene.
+    </string>
+
+    <string name="Om_oss_3">
+        Data om været er hentet fra MET Norway Weather API v.3, tilbudt av Meteorologisk Institutt
+        i samarbeid med
+        Institutt for Informatikk, Universitetet i Oslo.
+
+    </string>
+
+    <string name="Bruksanvisning1">Når applikasjonen åpnes, møter man hjemmesiden.
+        Den viser været for dagen, og dagens anbefalte antrekk. For flere detaljer om været, <b>scroll nedover.</b>
+        Her vil man kunne se timesutvikling på været, i tillegg til langtidsvarsel på opp til ni dager.<br/>
+        For å se nærmere på hvilke plagg som anbefales, <b>trykk</b> på mannekengen.
+        Her vil man kunne se hvilke plagg som er i dagens anbefalte antrekk. Se også bilde under.<br/>
+
+    </string>
+
+    <string name="Bruksanvisning2">For å se været og klesanbefaling for et annet sted, trykk på <b>“Sted”</b> nede til venstre.
+        Det vil da være mulig å søke etter et område i Norge.<br/>
+
+    </string>
+
+    <string name="Bruksanvisning3">Nede til høyre finner man <b>“Innstillinger”</b>.<br/>
+        For å se informasjon om applikasjonen og produksjon trykk på <b>"Om oss"</b> <br/>
+        For å se informasjon om hvordan du bruker applikasjonen trykk på <b>"Bruksanvisning"</b> (Vi er her nå) <br/>
+        For å slette all data om din bruk av applikasjonen trykk på <b>"Slett data"</b>
+    </string>
+
+
+
+
+
+    <string name="loading_data" tools:ignore="TypographyEllipsis">Loading data...</string>
+    <string name="empty_string" />
+    <string name="scroll_ned_for_mer_info"><i>Scroll ned for mer info</i></string>
+    <string name="button_add_loc_desc">Knapp for å legge til sted, leder til google maps</string>
+    <string name="home_button_userManual_desc">Knapp til hovedside</string>
+    <string name="bruksBilde1_desc">Bilde av appens hovedside</string>
+    <string name="clothing_icon_desc">Bilde av klesplagg</string>
+    <string name="daily_weather_symbol_desc">Symbol for dagens vær</string>
+    <string name="weather_background_desc">Bakgrunnen på hovedsiden</string>
+    <string name="outfit_image_desc">Bilde av foreslått antrekk</string>
+    <string name="gps_desc">gps symbol</string>
+    <string name="button_loc_to_home_desc">Knapp som velger denne spesifikke lokasjonen</string>
+    <string name="home_button_OmOss_desc">Button that leads home</string>
+    <string name="uioLogo_desc">Image of UIO logo</string>
+    <string name="met_logo_desc">Bilde av met logoen</string>
+    <string name="hvordan_bruke_applikasjonen">Hvordan bruke applikasjonen</string>
+    <string name="clothing_name">Name</string>
+    <string name="maks_min_temperatur">Maks/min. temperatur</string>
+    <string name="_12_6">12°/6°</string>
+    <string name="f_ler_som">Føles som</string>
+    <string name="_7">7°</string>
+    <string name="nedb_rsmengde">Nedbørsmengde</string>
+    <string name="hjemmeside_og_klesanbefaling">Hjemmeside og klesanbefaling</string>
+    <string name="vaer_soek">Vær og klesanbefaling på ønsket sted</string>
+    <string name="instillinger">Instillinger</string>
+    <string name="_0mm">0mm</string>
+    <string name="luftfuktighet">Luftfuktighet</string>
+    <string name="_56">56%</string>
+    <string name="vind">Vind</string>
+    <string name="ssv_6_9_m_s">ssv 6,9 m/s</string>
+    <string name="daglig_vaervarsel">Daglig værvarsel</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="om_oss">Om oss</string>
+    <string name="innstillinger">Innstillinger</string>
+    <string name="bruksanvisning">Bruksanvisning</string>
+    <string name="slett_data">Slett data</string>
+    <string name="weathericon">weatherIcon</string>
+    <string name="knapp_til_hovedsiden">Knapp til hovedsiden</string>
+    <string name="dagens_anbefaling">Dagens anbefaling</string>
+    <string name="sted">Sted</string>
+    <string name="hjem">Hjem</string>
+    <string name="weather_Temp_TextView">%1.01f°</string>
+    <string name="eff_Temp_TextView">%1$.01f°</string>
+    <string name="min_Max_Temp_TextView">%1$.01f° / %2$.01f°</string>
+    <string name="precipitation_TextView"> %1$.01fmm</string>
+    <string name="humidity_TextView"> %1$.01f%%</string>
+    <string name="wind_Direction_Speed_TextView">%1$s %2$.01f m/s</string>
+    <string name="daily_weather_adap_hlder_dte">%1$d.%2$d</string>
+    <string name="daily_weather_adap_hlder_rain">%1$.01f mm</string>
+    <string name="daily_weather_adap_hlder_forecast">%1$.01f°  -   %2$.01f°</string>
+    <string name="her_er_det_mulig_scrolle_ned">Her er det mulig å scrolle ned</string>
+    <string name="viewHolder_hour_Temp_text">%1$.01f°</string>
+</resources>

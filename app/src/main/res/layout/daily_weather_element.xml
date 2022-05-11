@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#6DFFFFFF"
+    app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/daily_weather_element"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/daily_weather_day"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/daily_weather_date"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/daily_weather_day"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/daily_weather_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/daily_weather_symbol_desc" />
+
+                <TextView
+                    android:id="@+id/daily_weather_rain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#03A9F4"
+                    android:textSize="13sp"
+                    android:layout_below="@+id/daily_weather_symbol"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/daily_weather_forecast"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"/>
+
+
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

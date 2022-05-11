@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/ic_place"
+        android:icon="@drawable/ic_place"
+        android:title="@string/sted"/>
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/hjem"/>
+
+  <!--  <item
+        android:id="@+id/ic_checklist"
+        android:icon="@drawable/ic_checklist"
+        android:title="Pakkeliste"/>-->
+
+    <item
+        android:id="@+id/ic_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/innstillinger"/>
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/clothing_list_element"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="15dp"
+            android:background="#eeeeee">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/clothing_icon"
+                android:src="@drawable/ic_launcher_background"
+                android:paddingHorizontal="10dp"
+                android:contentDescription="@string/clothing_icon_desc" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/clothing_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/clothing_name"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

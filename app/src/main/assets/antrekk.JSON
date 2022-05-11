@@ -1,0 +1,321 @@
+{
+  "outfits": [
+	 {
+	"id": "veldigkaldt_1",
+	"ikon": "veldigkaldt_1",
+	"plagg": ["sko_vinter",
+		"jakke_vinter",
+		"hode_lue",
+		"hals_skjerf",
+		"genser_ull",
+		"bukse_vanlig",
+		"sokker_ull",
+		"ulltoy_overdel",
+		"ulltoy_underdel",
+		"hender_votter"],
+	"tempMin": "-30.0",
+	"vind": "true",
+	"maxNedbor": "100"
+    	},
+	{
+	"id": "kaldt_1",
+	"ikon": "kaldt_1",
+	"plagg": ["sko_vinter",
+		"jakke_anorakk",
+		"hode_lue",
+		"hals_skjerf",
+		"genser_ull",
+		"bukse_vanlig",
+		"ulltoy_underdel",
+		"hender_votter"],
+	"tempMin": "-1.0",
+	"vind": "true",
+	"maxNedbor": "2"
+    	},
+    	{
+	"id": "kaldtRegn_1",
+	"ikon": "kaldtregn_1",
+	"plagg": ["sko_stovler",
+		"jakke_regn",
+		"hode_lue",
+		"genser_ull",
+		"bukse_vanlig",
+		"ulltoy_underdel",
+		"hender_hansker"],
+	"tempMin": "-1.0",
+	"vind": "true",
+	"maxNedbor": "4"
+    	},
+    	{
+	"id": "kaldtRegn_2",
+	"ikon": "kaldtregn_2",
+	"plagg": ["sko_stovler",
+		"jakke_regn",
+		"hode_sydvest",
+		"genser_ull",
+		"bukse_regn",
+		"ulltoy_underdel",
+		"hender_hansker"],
+	"tempMin": "-1.0",
+	"vind": "true",
+	"maxNedbor": "100"
+    	},
+	{
+	"id": "kjolig_1",
+	"ikon": "kjolig_1",
+	"plagg": ["sko_joggesko",
+		"jakke_anorakk",
+		"hode_lue",
+		"genser_vanlig",
+		"bukse_vanlig",
+		"hender_hansker"],
+	"tempMin": "4.0",
+	"vind": "true",
+	"maxNedbor": "2"
+    	},
+	{
+	"id": "kjoligRegn_1",
+	"ikon": "kjoligregn_1",
+	"plagg": ["sko_stovler",
+		"jakke_regn",
+		"hode_lue",
+		"genser_vanlig",
+		"bukse_vanlig",
+		"hender_hansker"],
+	"tempMin": "4.0",
+	"vind": "true",
+	"maxNedbor": "4"
+    	},
+	{
+	"id": "kjoligRegn_2",
+	"ikon": "kjoligregn_2",
+	"plagg": ["sko_stovler",
+		"jakke_regn",
+		"hode_sydvest",
+		"genser_vanlig",
+		"bukse_regn",
+		"hender_hansker"],
+	"tempMin": "4.0",
+	"vind": "true",
+	"maxNedbor": "100"
+    	},
+	{
+	"id": "mild_1",
+	"ikon": "mild_1",
+	"plagg": ["sko_joggesko",
+		"hode_caps",
+		"genser_vanlig",
+		"bukse_vanlig"],
+	"tempMin": "12.0",
+	"vind": "false",
+	"maxNedbor": "0"
+    	},
+	{
+	"id": "mild_2",
+	"ikon": "mild_2",
+	"plagg": ["sko_joggesko",
+		"jakke_vanlig",
+		"hode_caps",
+		"genser_vanlig",
+		"bukse_vanlig"],
+	"tempMin": "10.0",
+	"vind": "true",
+	"maxNedbor": "2"
+    	},
+	{
+	"id": "mild_3",
+	"ikon": "mild_3",
+	"plagg": ["sko_joggesko",
+		"jakke_anorakk",
+		"hode_caps",
+		"genser_vanlig",
+		"bukse_vanlig"],
+	"tempMin": "10.0",
+	"vind": "true",
+	"maxNedbor": "4"
+    	},
+	{
+	"id": "mildRegn_1",
+	"ikon": "mildregn_1",
+	"plagg": ["sko_stovler",
+		"jakke_regn",
+		"genser_vanlig",
+		"bukse_vanlig"],
+	"tempMin": "10.0",
+	"vind": "true",
+	"maxNedbor": "100"
+    	},
+ 	{
+	"id": "varm_1",
+	"ikon": "varm_1",
+	"plagg": ["sko_joggesko",
+		"hode_caps",
+		"genser_tskjorte",
+		"bukse_kortbukse"],
+	"tempMin": "18.0",
+	"vind": "false",
+	"maxNedbor": "0"
+    	},
+	{
+	"id": "varm_2",
+	"ikon": "varm_2",
+	"plagg": ["sko_joggesko",
+		"hode_caps",
+		"genser_vanlig",
+		"bukse_kortbukse"],
+	"tempMin": "16.0",
+	"vind": "false",
+	"maxNedbor": "0"
+    	},
+	{
+	"id": "varm_3",
+	"ikon": "varm_3",
+	"plagg": ["sko_joggesko",
+		"hode_caps",
+		"genser_tskjorte",
+		"jakke_vanlig",
+		"bukse_kortbukse"],
+	"tempMin": "14.0",
+	"vind": "true",
+	"maxNedbor": "1"
+    	},
+	{
+	"id": "varmRegn_1",
+	"ikon": "varmregn_1",
+	"plagg": ["sko_joggesko",
+		"jakke_regn",
+		"genser_tskjorte",
+		"bukse_kortbukse"],
+	"tempMin": "16.0",
+	"vind": "true",
+	"maxNedbor": "4"
+    	},
+	{
+	"id": "varmRegn_2",
+	"ikon": "varmregn_2",
+	"plagg": ["sko_stovler",
+		"jakke_regn",
+		"genser_vanlig",
+		"bukse_kortbukse"],
+	"tempMin": "14.0",
+	"vind": "true",
+	"maxNedbor": "100"
+    	}
+  ],
+
+
+  "clothes":[
+	{
+		"id": "bukse_kortbukse",
+		"navn": "Kortbukse",
+		"ikon": "kortbukse"
+	},
+	{
+		"id": "bukse_regn",
+		"navn": "Regnbukse",
+		"ikon": "regnbukse"
+	},
+	{
+		"id": "bukse_vanlig",
+		"navn": "Vanlig bukse",
+		"ikon": "vanligbukse"
+	},
+	{
+		"id": "genser_tskjorte",
+		"navn": "T-skjorte",
+		"ikon": "tskjorte"
+	},
+	{
+		"id": "genser_vanlig",
+		"navn": "Genser",
+		"ikon": "genser"
+	},
+	{
+		"id": "genser_ull",
+		"navn": "Ullgenser",
+		"ikon": "ullgenser"
+	},
+	{
+		"id": "hals_skjerf",
+		"navn": "Skjerf",
+		"ikon": "skjerf"
+	},
+	{
+		"id": "hender_votter",
+		"navn": "Ullvotter",
+		"ikon": "votter"
+	},
+	{
+		"id": "hender_hansker",
+		"navn": "Tynne hansker",
+		"ikon": "hansker"
+	},
+	{
+		"id": "hode_caps",
+		"navn": "Caps",
+		"ikon": "caps"
+	},
+	{
+		"id": "hode_lue",
+		"navn": "Lue",
+		"ikon": "lue"
+	},
+	{
+		"id": "hode_sydvest",
+		"navn": "Sydvest",
+		"ikon": "sydvest"
+	},
+	{
+		"id": "jakke_anorakk",
+		"navn": "Anorakk",
+		"ikon": "anorakk"
+	},
+
+	{
+		"id": "jakke_regn",
+		"navn": "Regnjakke",
+		"ikon": "regnjakke"
+	},
+	{
+		"id": "jakke_vanlig",
+		"navn": "Lett jakke",
+		"ikon": "vanligjakke"
+	},
+	{
+		"id": "jakke_vinter",
+		"navn": "Vinterjakke",
+		"ikon": "vinterjakke"
+ 	 },
+  	{
+
+		"id": "sko_joggesko",
+		"navn": "Joggesko",
+		"ikon": "joggesko"
+	},
+	{
+		"id": "sko_stovler",
+		"navn": "Støvler",
+		"ikon": "stovler"
+	},
+	{
+		"id": "sko_vinter",
+		"navn": "Vintersko",
+		"ikon": "vintersko"
+	},
+	{
+		"id": "sokker_ull",
+		"navn": "Ullsokker",
+		"ikon": "ullsokker"
+	},
+	{
+		"id": "ulltoy_overdel",
+		"navn": "Ulltrøye",
+		"ikon": "ulltroye"
+	},
+	{
+		"id": "ulltoy_underdel",
+		"navn": "Ullstrømpebukse",
+		"ikon": "stilongs"
+	}
+  ]
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.fragments.settings.OmOssFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar_omOss"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#858585"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:weightSum="9">
+
+
+        <ImageButton
+            android:id="@+id/home_button_OmOss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_back"
+            android:contentDescription="@string/home_button_OmOss_desc" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/om_oss"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_weight="9"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/omOss1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/Om_oss_1"
+        android:layout_below="@id/toolbar_omOss"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/omOss2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/Om_oss_2"
+        android:textSize="15sp"
+        android:layout_below="@id/omOss1"/>
+
+    <TextView
+        android:id="@+id/omOss3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/omOss2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/Om_oss_3"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/uioLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/omOss3"
+        android:src="@drawable/uio_logo"
+        android:contentDescription="@string/uioLogo_desc" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/met_logo"
+        android:layout_below="@id/omOss3"
+        android:layout_toEndOf="@id/uioLogo"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="@string/met_logo_desc" />
+
+</RelativeLayout>
